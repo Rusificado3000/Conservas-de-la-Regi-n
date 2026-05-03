@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia | Conservas de la Región</title>
+    <link rel="stylesheet" href="src/style.css"> 
+    <link rel="icon" href="src/img/logo.png" type="image/png">
+</head>
+<body class="loading">
+    <div id="loader" class="loader-container">
+        <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="src/img/logo.png" alt="Logo Conservas" class="logo-img">
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Productos</a></li>
+                <li><a href="nosotros.html" class="activo">Nuestra historia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="historia-interactiva" style="margin-top: 120px;">
+        <div class="cabecera-seccion fade-in" style="justify-content: center; text-align: center; margin-bottom: 3rem;">
+            <h2 class="seccion-titulo">Nuestra Esencia y Recorrido</h2>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--texto-claro);">Somos una empresa 100% colombiana ubicada en San Juan de Urabá, dedicada a la excelencia nutricional y al impacto social.</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="historia-card interactiva">
+                    <span class="anio">Identidad</span>
+                    <h3>¿Quiénes Somos?</h3>
+                    <p>Ubicados en el corazón del Caribe colombiano, nos dedicamos a la producción de coco, plátano tipo exportación y maracuyá, además de derivados de alta calidad como el coco deshidratado.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="historia-card interactiva">
+                    <span class="anio">Calidad</span>
+                    <h3>Prensado en Frío</h3>
+                    <p>Nuestro aceite extra virgen se obtiene de cocos nucifera frescos seleccionados manualmente. El prensado en frío garantiza que no se pierdan nutrientes, logrando una pureza total sin aditivos químicos.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="historia-card interactiva">
+                    <span class="anio">Impacto</span>
+                    <h3>Compromiso Social</h3>
+                    <p>Nuestra labor va más allá del producto: apoyamos activamente a mujeres cabeza de hogar en la región, integrándolas en nuestra cadena de valor para fortalecer la comunidad.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="historia-card interactiva">
+                    <span class="anio">Planeta</span>
+                    <h3>Empaque Consciente</h3>
+                    <p>Cuidamos el entorno utilizando empaques biodegradables y reciclables fabricados con vidrio, cartón y fibra de coco, alineados con nuestro Permiso Sanitario PSA-0002921-2021.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="#" class="logo">Conservas de la región</a>
+                <p>Amor y respeto desde San Juan de Urabá para el mundo.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Productos</a></li>
+                    <li><a href="nosotros.html" class="activo">Nuestra historia</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/conservasdelaregion_">Instagram</a></li>
+                    <li><a href="https://wa.me/573217680200">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Conservas de la Región. Todos los derechos reservados. PSA-0002921-2021.</p>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script> 
+</body>
+</html>

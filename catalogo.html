@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Conservas de la Región</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="src/img/logo.png" type="image/png">
+</head>
+<body class="loading">
+
+    <div id="loader" class="loader-container">
+        <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="src/img/logo.png" alt="Logo Conservas" class="logo-img">
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="activo">Productos</a></li>
+                <li><a href="nosotros.html">Nuestra historia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="fade-in" style="padding: 160px 5% 4rem; text-align: center; background-color: var(--blanco);">
+        <h1 class="seccion-titulo" style="color: var(--verde-botanico); font-size: 3.5rem; margin-bottom: 1rem;">Catálogo Natural</h1>
+        <p style="color: var(--texto-claro); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Explora nuestra colección de productos cultivados y preparados con la esencia del Caribe colombiano.</p>
+    </section>
+
+    <section class="destacados fade-in" style="padding: 4rem 5%;">
+        <h2 class="seccion-titulo" style="text-align:center;">Aceite de Coco</h2>
+        <p style="text-align:center; color: var(--texto-claro); max-width: 800px; margin: 0 auto 3rem;">Nuestro aceite de coco extra virgen es elaborado mediante el prensado en frío de cocos nucifera en su estado puro y fresco.</p>
+        <div class="grid-productos">
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="1" data-title="Aceite Coco Virgen 231 mL" data-desc="Prensado en frío." data-images="src/img/aceite-coco-231mL.jpeg, src/img/demostración-aceite-coco-231mL.png">
+                    <img src="src/img/aceite-coco-231mL.jpeg" alt="Aceite 231 mL">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Aceite Coco Virgen 231 mL</h3>
+                    <span class="precio">Prensado en frío</span>
+                </div>
+            </div>
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="2" data-title="Aceite Coco Virgen 250 mL" data-desc="100% natural." data-images="src/img/aceite-coco-250mL.jpeg, src/img/aceite-coco-250mL.png">
+                    <img src="src/img/aceite-coco-250mL.jpeg" alt="Aceite 250 mL">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Aceite Coco Virgen 250 mL</h3>
+                    <span class="precio">100% Natural</span>
+                </div>
+            </div>
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="3" data-title="Aceite Coco Virgen 500 mL" data-desc="Cosecha local." data-images="src/img/aceite-coco-500mL.jpeg">
+                    <img src="src/img/aceite-coco-500mL.jpeg" alt="Aceite 500 mL">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Aceite Coco Virgen 500 mL</h3>
+                    <span class="precio">Cosecha Local</span>
+                </div>
+            </div>
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="4" data-title="Aceite Coco Virgen 1 L" data-desc="Cosecha local." data-images="src/img/aceite-coco-1l.png">
+                    <img src="src/img/aceite-coco-1l.png" alt="Aceite 1 L">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Aceite Coco Virgen 1 L</h3>
+                    <span class="precio">Cosecha Local</span>
+                </div>
+            </div>
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="5" data-title="Aceite Coco Virgen 4 L" data-desc="Cosecha local." data-images="src/img/aceite-coco-4l.png">
+                    <img src="src/img/aceite-coco-4l.png" alt="Aceite 4 L">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Aceite Coco Virgen 4 L</h3>
+                    <span class="precio">Cosecha Local</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destacados fade-in" style="padding: 4rem 5%;">
+        <h2 class="seccion-titulo" style="text-align:center;">Coco y Frutas Deshidratadas</h2>
+        <p style="text-align:center; color: var(--texto-claro); max-width: 800px; margin: 0 auto 3rem;">La variedad de frutas que se cultivan en nuestras fincas son reconocidas por su excelente sabor, textura y múltiples beneficios nutricionales.</p>
+        <div class="grid-productos">
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="6" data-title="Coco Deshidratado" data-desc="Pura fibra y sabor." data-images="src/img/coco-deshidratado.jpeg">
+                    <img src="src/img/coco-deshidratado.jpeg" alt="Coco Deshidratado">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Coco Deshidratado</h3>
+                    <span class="precio">Snack Saludable</span>
+                </div>
+            </div>
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="7" data-title="Frutas Deshidratadas" data-desc="Cosecha local." data-images="src/img/frutas-deshidratadas.jpeg">
+                    <img src="src/img/frutas-deshidratadas.jpeg" alt="Frutas Deshidratadas">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Frutas Deshidratadas</h3>
+                    <span class="precio">Cosecha Local</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destacados fade-in" style="padding: 4rem 5%;">
+        <h2 class="seccion-titulo" style="text-align:center;">Maracuyá</h2>
+        <p style="text-align:center; color: var(--texto-claro); max-width: 800px; margin: 0 auto 3rem;">Nuestra pulpa de maracuyá premium es elaborada mediante la extracción cuidadosa de frutos de Passiflora edulis en su estado puro y fresco.</p>
+        <div class="grid-productos">
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="8" data-title="Maracuyá" data-desc="Pura fibra y sabor." data-images="src/img/maracuyá.png">
+                    <img src="src/img/maracuyá.png" alt="Maracuyá">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Maracuyá</h3>
+                    <span class="precio">Fruta rica en vitaminas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destacados fade-in" style="padding: 4rem 5%; background-color: var(--blanco);">
+        <h2 class="seccion-titulo" style="text-align:center;">Plátano</h2>
+        <p style="text-align:center; color: var(--texto-claro); max-width: 800px; margin: 0 auto 3rem;">Cultivamos la variedad plátano Hartón, un fruto distinguido y reconocido en el mundo como una comida étnica tropical por su textura y sabor.</p>
+        <div class="grid-productos">
+            <div class="card-producto">
+                <div class="img-container open-modal" data-id="9" data-title="Plátano Tipo Exportación" data-desc="Cultivado en las fértiles tierras de Urabá." data-images="src/img/platanos.png">
+                    <img src="src/img/platanos.png" alt="Plátano Tipo Exportación">
+                    <div class="hover-add">Ver información</div>
+                </div>
+                <div class="info-producto">
+                    <h3>Plátano Tipo Exportación</h3>
+                    <span class="precio">Origen Urabá</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="carousel-container">
+                    <img id="carousel-img" src="" alt="Producto">
+                    <button class="carousel-btn prev" id="btn-prev">&#10094;</button>
+                    <button class="carousel-btn next" id="btn-next">&#10095;</button>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc"></p>
+                    <div class="modal-acciones">
+                        <button id="modal-add-cart" class="btn btn-primario">Añadir al carrito</button>
+                        <button id="modal-buy-now" class="btn btn-secundario">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="cart-vacio">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+            <button id="checkout-btn" class="btn btn-primario" style="width: 100%;">Proceder al pago</button>
+        </div>
+    </div>
+
+    <div class="cart-float" id="open-cart-btn">
+        <span class="cart-badge" id="cart-badge">0</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </div>
+
+    <a href="https://wa.me/573045749676" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.125-.327-.149-.976-.36-1.855-1.154-.728-.659-1.218-1.473-1.361-1.716-.144-.244-.015-.376.106-.497.109-.109.24-.28.361-.421.12-.141.16-.242.24-.403.08-.162.04-.305-.02-.426-.06-.121-.54-1.305-.74-1.787-.193-.467-.389-.404-.536-.412-.137-.008-.293-.008-.452-.008-.158 0-.415.06-.632.296-.217.236-.826.808-.826 1.97s.847 2.284.965 2.441c.119.158 1.666 2.544 4.037 3.518.566.232 1.006.37 1.349.474.568.181 1.085.155 1.494.094.461-.069 1.416-.578 1.615-1.139.199-.56.199-1.04.14-1.14-.059-.098-.217-.157-.455-.276z"/>
+        </svg>
+    </a>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo">Conservas de la región</a>
+                <p style="margin-top: 1.5rem; margin-bottom: 0.5rem;"><strong>Ubicación:</strong> San Juan de Urabá, Antioquia</p>
+                <p><strong>Teléfono:</strong> <a href="https://wa.me/573045749676" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">+57 304 5749676</a></p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="activo">Productos</a></li>
+                    <li><a href="nosotros.html">Nuestra historia</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/conservasdelaregion">Instagram</a></li>
+                    <li><a href="https://wa.me/573045749676">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Conservas de la Región. Todos los derechos reservados. PSA-0002921-2021.</p>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script> 
+</body>
+</html>

@@ -53,7 +53,7 @@ nav a:hover, nav a.activo { color: var(--terracota); }
 .carousel-track { padding: 0; margin: 0; list-style: none; display: flex; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .carousel-slide { min-width: 100%; }
 .carousel-slide img { width: 100%; height: auto; display: block; object-fit: contain; }
-.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; color: var(--verde-botanico); z-index: 10; transition: background 0.3s, transform 0.3s; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; color: var(--verde-botanico); z-index: 10; transition: background 0.3s, transform 0.3s; padding: 0; }
 .carousel-btn:hover { background: var(--blanco); transform: translateY(-50%) scale(1.1); }
 .carousel-btn svg { width: 20px; height: 20px; }
 .carousel-btn.btn-izq { left: 20px; }
@@ -124,10 +124,10 @@ footer { background-color: var(--verde-botanico); color: var(--blanco); padding:
 .modal-grid { display: grid; grid-template-columns: 1fr 1fr; flex-grow: 1; overflow-y: auto; }
 .carousel-container { position: relative; background: #f4f4f4; display: flex; align-items: center; justify-content: center; aspect-ratio: 1/1; width: 100%; }
 .carousel-container img { width: 100%; height: 100%; object-fit: cover; }
-.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.7); border: none; font-size: 1.5rem; cursor: pointer; padding: 10px 15px; transition: background 0.3s; border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; }
-.carousel-btn:hover { background: white; }
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-container .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; font-size: 1.5rem; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--texto-oscuro); transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 0; z-index: 10; }
+.carousel-container .carousel-btn:hover { background: var(--blanco); transform: translateY(-50%) scale(1.1); }
+.carousel-container .carousel-btn.prev { left: 15px; }
+.carousel-container .carousel-btn.next { right: 15px; }
 .modal-info { padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
 .modal-info h2 { font-size: 2rem; color: var(--verde-botanico); margin-bottom: 1rem; }
 .modal-info p { color: var(--texto-claro); margin-bottom: 2rem; }
@@ -145,7 +145,7 @@ footer { background-color: var(--verde-botanico); color: var(--blanco); padding:
 .cart-item-info span { color: var(--texto-claro); font-size: 0.8rem; }
 .qty-controls { display: flex; align-items: center; gap: 10px; margin-top: 5px; }
 .qty-btn { background-color: var(--borde-suave); border: none; border-radius: 4px; width: 25px; height: 25px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-size: 1rem; color: var(--texto-oscuro); transition: background 0.3s; }
-.qty-btn:hover { background-color: var(--terracota); color: white; }
+.qty-btn:hover { background: var(--terracota); color: white; }
 .remove-item { color: var(--terracota); font-size: 0.8rem; cursor: pointer; border: none; background: none; margin-top: 5px; text-decoration: underline; }
 .cart-footer { padding: 2rem; border-top: 1px solid var(--borde-suave); background: white; }
 @media (max-width: 900px) { .filosofia-grid { grid-template-columns: 1fr; gap: 3rem; } .footer-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; } .footer-grid p { margin: 1rem auto 0; } .demo-grid { grid-template-columns: 1fr; gap: 3rem; } }

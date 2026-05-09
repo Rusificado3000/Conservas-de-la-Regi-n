@@ -52,6 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const aboutCarousel = document.getElementById('about-carousel');
+    if (aboutCarousel) {
+        const aboutSlides = aboutCarousel.querySelectorAll('.about-slide');
+        if (aboutSlides.length > 0) {
+            let currentAboutSlide = 0;
+            setInterval(() => {
+                aboutSlides[currentAboutSlide].classList.remove('active');
+                currentAboutSlide = (currentAboutSlide + 1) % aboutSlides.length;
+                aboutSlides[currentAboutSlide].classList.add('active');
+            }, 3000);
+        }
+    }
+
     const track = document.getElementById('historia-track');
     const prevBtn = document.getElementById('historia-prev');
     const nextBtn = document.getElementById('historia-next');

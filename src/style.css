@@ -66,23 +66,19 @@ nav a:hover, nav a.activo { color: var(--terracota); }
 .beneficios-modernos { padding: 7rem 5%; background-color: var(--blanco); position: relative; }
 .cabecera-beneficios { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
 .subtitulo-beneficios { color: var(--terracota); font-family: var(--font-titulos); font-size: 1.3rem; font-style: italic; margin-top: -0.5rem; }
-.coco-destacado { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1000px; margin: 0 auto 5rem; }
-.coco-img img { width: 100%; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
-.coco-info h3 { font-family: var(--font-titulos); color: var(--terracota); font-size: 2rem; margin-bottom: 1rem; }
-.coco-info p { color: var(--texto-claro); margin-bottom: 1.5rem; }
 .lista-beneficios { list-style: none; }
 .lista-beneficios li { position: relative; padding-left: 1.5rem; margin-bottom: 1rem; color: var(--texto-oscuro); font-size: 0.95rem; }
 .lista-beneficios li::before { content: '✓'; position: absolute; left: 0; color: var(--verde-botanico); font-weight: bold; }
 .beneficios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; max-width: 1200px; margin: 0 auto; }
-.beneficio-item { background: var(--bg-principal); padding: 3rem 2rem; border-radius: 16px; text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; border: 1px solid var(--borde-suave); position: relative; overflow: hidden; z-index: 1; }
-.beneficio-item:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(60, 75, 43, 0.08); border-color: rgba(184, 87, 51, 0.3); }
-.beneficio-item::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background-color: var(--terracota); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; z-index: -1; }
-.beneficio-item:hover::before { transform: scaleX(1); }
+.beneficio-item-normal { background: var(--bg-principal); padding: 3rem 2rem; border-radius: 16px; text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; border: 1px solid var(--borde-suave); position: relative; overflow: hidden; z-index: 1; }
+.beneficio-item-normal:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(60, 75, 43, 0.08); border-color: rgba(184, 87, 51, 0.3); }
+.beneficio-item-normal::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background-color: var(--terracota); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; z-index: -1; }
+.beneficio-item-normal:hover::before { transform: scaleX(1); }
 .icono-beneficio { width: 80px; height: 80px; background-color: var(--blanco); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--verde-botanico); box-shadow: 0 8px 20px rgba(0,0,0,0.04); transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease; }
 .icono-beneficio svg { width: 35px; height: 35px; }
-.beneficio-item:hover .icono-beneficio { background-color: var(--verde-botanico); color: var(--blanco); transform: scale(1.1); }
-.beneficio-item h3 { color: var(--verde-botanico); margin-bottom: 1rem; font-size: 1.4rem; }
-.beneficio-item p { color: var(--texto-claro); font-size: 0.95rem; line-height: 1.7; }
+.beneficio-item-normal:hover .icono-beneficio { background-color: var(--verde-botanico); color: var(--blanco); transform: scale(1.1); }
+.beneficio-item-normal h3 { color: var(--verde-botanico); margin-bottom: 1rem; font-size: 1.4rem; }
+.beneficio-item-normal p { color: var(--texto-claro); font-size: 0.95rem; line-height: 1.7; }
 .video-demostracion { padding: 6rem 5%; background-color: var(--bg-principal); }
 .demo-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: center; max-width: 1200px; margin: 0 auto; }
 .demo-texto p { color: var(--texto-claro); font-size: 1.05rem; }
@@ -155,7 +151,7 @@ footer { background-color: var(--verde-botanico); color: var(--blanco); padding:
 .remove-item { color: var(--terracota); font-size: 0.8rem; cursor: pointer; border: none; background: none; margin-top: 5px; text-decoration: underline; }
 .cart-footer { padding: 2rem; border-top: 1px solid var(--borde-suave); background: white; }
 @media (max-width: 900px) { .filosofia-grid, .ubicacion-grid { grid-template-columns: 1fr; gap: 3rem; } .footer-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; } .footer-grid p { margin: 1rem auto 0; } .demo-grid { grid-template-columns: 1fr; gap: 3rem; } }
-@media (max-width: 768px) { .menu-toggle { display: flex; } .nav-menu { position: fixed; top: 0; right: -100%; width: 100%; height: 100vh; background-color: var(--bg-principal); display: flex; flex-direction: column; justify-content: center; align-items: center; transition: 0.4s ease; z-index: 1000; } .nav-menu.active { right: 0; } nav ul { flex-direction: column; text-align: center; gap: 2rem; } nav a { font-size: 1.5rem; } .menu-toggle.active .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); } .menu-toggle.active .bar:nth-child(2) { opacity: 0; } .menu-toggle.active .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); } .hero { padding: 0 5%; } .hero h1 { font-size: 2.8rem; } .hero-bg::after { background: linear-gradient(to bottom, rgba(251, 249, 246, 0.95) 0%, rgba(251, 249, 246, 0.8) 100%); } .hero-contenido { margin-top: 0; text-align: center; display: flex; flex-direction: column; align-items: center; } .hero p { margin: 0 auto 2rem; } .seccion-titulo { font-size: 2rem; } .filosofia, .beneficios, .destacados, .beneficios-modernos, .historia-tradicion, .video-demostracion, .ubicacion { padding: 4rem 5%; } .grid-productos { grid-template-columns: 1fr; gap: 2rem; } .cabecera-seccion { flex-direction: column; align-items: center; text-align: center; } .modal-grid { grid-template-columns: 1fr; display: flex; flex-direction: column; } .modal-info { padding: 1.5rem; } .modal-info h2 { font-size: 1.5rem; margin-bottom: 0.5rem; } .modal-info p { margin-bottom: 1.5rem; font-size: 0.9rem; } .modal-acciones { flex-direction: column; width: 100%; } .modal-acciones .btn { width: 100%; margin-bottom: 0.5rem; } .whatsapp-float { bottom: 20px; right: 15px; width: 50px; height: 50px; } .cart-float { bottom: 80px; right: 15px; width: 50px; height: 50px; } .cart-sidebar { max-width: 100%; } .cart-header, .cart-footer, .cart-items { padding: 1.5rem; } .coco-destacado { grid-template-columns: 1fr; gap: 2rem; } .beneficios-grid { gap: 1.5rem; } .beneficio-item { padding: 2.5rem 1.5rem; } }
+@media (max-width: 768px) { .menu-toggle { display: flex; } .nav-menu { position: fixed; top: 0; right: -100%; width: 100%; height: 100vh; background-color: var(--bg-principal); display: flex; flex-direction: column; justify-content: center; align-items: center; transition: 0.4s ease; z-index: 1000; } .nav-menu.active { right: 0; } nav ul { flex-direction: column; text-align: center; gap: 2rem; } nav a { font-size: 1.5rem; } .menu-toggle.active .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); } .menu-toggle.active .bar:nth-child(2) { opacity: 0; } .menu-toggle.active .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); } .hero { padding: 0 5%; } .hero h1 { font-size: 2.8rem; } .hero-bg::after { background: linear-gradient(to bottom, rgba(251, 249, 246, 0.95) 0%, rgba(251, 249, 246, 0.8) 100%); } .hero-contenido { margin-top: 0; text-align: center; display: flex; flex-direction: column; align-items: center; } .hero p { margin: 0 auto 2rem; } .seccion-titulo { font-size: 2rem; } .filosofia, .beneficios, .destacados, .beneficios-modernos, .historia-tradicion, .video-demostracion, .ubicacion { padding: 4rem 5%; } .grid-productos { grid-template-columns: 1fr; gap: 2rem; } .cabecera-seccion { flex-direction: column; align-items: center; text-align: center; } .modal-grid { grid-template-columns: 1fr; display: flex; flex-direction: column; } .modal-info { padding: 1.5rem; } .modal-info h2 { font-size: 1.5rem; margin-bottom: 0.5rem; } .modal-info p { margin-bottom: 1.5rem; font-size: 0.9rem; } .modal-acciones { flex-direction: column; width: 100%; } .modal-acciones .btn { width: 100%; margin-bottom: 0.5rem; } .whatsapp-float { bottom: 20px; right: 15px; width: 50px; height: 50px; } .cart-float { bottom: 80px; right: 15px; width: 50px; height: 50px; } .cart-sidebar { max-width: 100%; } .cart-header, .cart-footer, .cart-items { padding: 1.5rem; } .beneficios-grid { gap: 1.5rem; } .beneficio-item-normal { padding: 2.5rem 1.5rem; } }
 .historia-interactiva { padding: 6rem 5%; background-color: var(--bg-principal); overflow: hidden; }
 .timeline { position: relative; max-width: 1000px; margin: 0 auto; padding: 2rem 0; }
 .timeline::before { content: ''; position: absolute; width: 2px; background-color: var(--borde-suave); top: 0; bottom: 0; left: 50%; transform: translateX(-50%); }
@@ -174,3 +170,56 @@ footer { background-color: var(--verde-botanico); color: var(--blanco); padding:
 .historia-card h3 { font-size: 1.8rem; color: var(--verde-botanico); margin-bottom: 1rem; transform: translateZ(30px); }
 .historia-card p { color: var(--texto-claro); font-size: 1rem; transform: translateZ(15px); }
 @media screen and (max-width: 768px) { .timeline::before { left: 20px; } .timeline-item { width: 100%; padding-left: 60px; padding-right: 0; left: 0!important; } .timeline-item:nth-child(even), .timeline-item:nth-child(odd) { text-align: left; } .timeline-dot, .timeline-item:nth-child(odd) .timeline-dot, .timeline-item:nth-child(even) .timeline-dot { left: 10px; right: auto; } }
+
+#coco-benefits-interactive { padding: 6rem 5%; background-color: var(--blanco); overflow: hidden; position: relative; }
+.coconut-benefits-container { max-width: 1200px; margin: 0 auto; position: relative; }
+.text-center { text-align: center; }
+.interactive-layout { position: relative; width: 100%; min-height: 800px; max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
+.central-display { position: relative; width: 260px; height: 260px; background: var(--bg-principal); border-radius: 50%; box-shadow: 0 20px 50px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.5s ease; overflow: hidden; }
+.central-coconut { width: 100%; height: auto; object-fit: contain; padding: 20px; transition: opacity 0.5s ease; }
+.central-panel { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--verde-botanico); color: var(--blanco); text-align: center; transition: opacity 0.5s ease; opacity: 1; z-index: 2; }
+.central-panel.hidden { opacity: 0; z-index: 1; pointer-events: none; }
+.central-panel h3 { font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--terracota); line-height: 1.2; }
+.central-panel p { font-size: 0.95rem; line-height: 1.5; color: var(--blanco); opacity: 0.9; }
+
+.benefit-item { position: absolute; background: var(--blanco); padding: 10px; border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; cursor: pointer; transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; border: 2px solid transparent; width: 140px; height: 140px; z-index: 15; transform: translate(-50%, -50%); }
+.benefit-item:hover { transform: translate(-50%, -50%) scale(1.1) !important; box-shadow: 0 15px 35px rgba(184,87,51,0.1); border-color: rgba(184,87,51,0.2); }
+.benefit-item.active { border-color: var(--terracota); background: var(--bg-principal); }
+
+.benefit-icon { width: 45px; height: 45px; margin-bottom: 5px; color: var(--verde-botanico); transition: color 0.4s ease; flex-shrink: 0; }
+.benefit-icon svg { width: 100%; height: 100%; }
+.benefit-item:hover .benefit-icon { color: var(--terracota); }
+
+.benefit-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; line-height: 1.3; color: var(--texto-oscuro); transition: color 0.4s ease; word-wrap: break-word; hyphens: auto; width: 100%; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; padding: 0 5px; }
+.benefit-item:hover .benefit-title { color: var(--terracota); }
+
+/* Posicionamiento en círculo para 10 elementos */
+.bubble-corazon { left: 90%; top: 50%; }
+.bubble-digestion { left: 82.3%; top: 73.5%; }
+.bubble-dental { left: 62.3%; top: 88%; }
+.bubble-apetito { left: 37.6%; top: 88%; }
+.bubble-inmune { left: 17.6%; top: 73.5%; }
+.bubble-pelo { left: 10%; top: 50%; }
+.bubble-cerebral { left: 17.6%; top: 26.4%; }
+.bubble-microbiana { left: 37.6%; top: 11.9%; }
+.bubble-peso { left: 62.3%; top: 11.9%; }
+.bubble-azucar { left: 82.3%; top: 26.4%; }
+
+.connecting-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; pointer-events: none; }
+.line-path { stroke: rgba(184,87,51,0.1); transition: stroke 0.4s ease, stroke-width 0.4s ease; }
+.line-path.active { stroke: var(--terracota); stroke-width: 3; stroke-dasharray: 5, 5; animation: dash 1s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: -10; } }
+
+@media (max-width: 900px) { 
+    .interactive-layout { min-height: auto; flex-direction: column; gap: 2rem; max-width: 600px; padding: 2rem; } 
+    .central-display { width: 250px; height: 250px; order: 1; } 
+    .central-panel { padding: 30px; } 
+    .central-panel h3 { font-size: 1.5rem; } 
+    .central-panel p { font-size: 0.9rem; } 
+    .benefit-item { position: relative; top: auto; left: auto; right: auto; bottom: auto; transform: none !important; width: 100%; max-width: 320px; height: auto; flex-direction: row; gap: 1rem; padding: 1.5rem; border-radius: 8px; border-color: var(--borde-suave); order: 2; text-align: left; align-items: center; justify-content: flex-start; } 
+    .benefit-item:hover { transform: translateY(-5px) !important; border-color: rgba(184,87,51,0.3); }
+    .benefit-icon { width: 40px; height: 40px; margin: 0; } 
+    .benefit-title { font-size: 1rem; letter-spacing: normal; -webkit-line-clamp: 3; padding: 0; } 
+    .connecting-lines { display: none; } 
+    .benefit-item.active { border-color: var(--terracota); } 
+}

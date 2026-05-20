@@ -98,21 +98,75 @@
     </div>
 </section>
 
-<section class="beneficios-modernos fade-in">
-    <div class="coco-destacado">
-        <div class="coco-img">
-            <img src="src/img/beneficios-coco.jpg" alt="Beneficios del Aceite de Coco">
+<section id="coco-benefits-interactive" class="fade-in">
+  <div class="coconut-benefits-container">
+    <h2 class="seccion-titulo text-center">Beneficios del Coco</h2>
+    <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem; color: var(--texto-claro);">Interactúa con cada burbuja para descubrir cómo nuestra esencia pura puede transformar tu bienestar integral de origen 100% natural.</p>
+    
+    <div class="interactive-layout">
+      
+      <div class="benefit-item bubble-corazon" data-benefit="corazon">
+        <span class="benefit-title">Salud Cardiovascular</span>
+      </div>
+
+      <div class="benefit-item bubble-digestion" data-benefit="digestion">
+        <span class="benefit-title">Mejora la Digestión</span>
+      </div>
+
+      <div class="benefit-item bubble-dental" data-benefit="dental">
+        <span class="benefit-title">Protección Dental</span>
+      </div>
+
+      <div class="benefit-item bubble-apetito" data-benefit="apetito">
+        <span class="benefit-title">Reduce el Apetito</span>
+      </div>
+
+      <div class="benefit-item bubble-inmune" data-benefit="inmune">
+        <span class="benefit-title">Sistema Inmune</span>
+      </div>
+
+      <div class="benefit-item bubble-pelo" data-benefit="pelo">
+        <span class="benefit-title">Cabello y Piel</span>
+      </div>
+
+      <div class="benefit-item bubble-cerebral" data-benefit="cerebral">
+        <span class="benefit-title">Función Cerebral</span>
+      </div>
+
+      <div class="benefit-item bubble-microbiana" data-benefit="microbiana">
+        <span class="benefit-title">Acción Antimicrobiana</span>
+      </div>
+
+      <div class="benefit-item bubble-peso" data-benefit="peso">
+        <span class="benefit-title">Pérdida de Peso</span>
+      </div>
+
+      <div class="benefit-item bubble-azucar" data-benefit="azucar">
+        <span class="benefit-title">Control de Azúcar</span>
+      </div>
+
+      <div class="central-display">
+        <img src="src/img/coco.png" alt="Coconut Pure" class="central-coconut">
+        <div class="central-panel hidden">
+          <h3 id="panel-title">Beneficio Único</h3>
+          <p id="panel-desc">Descripción del beneficio en detalle.</p>
         </div>
-        <div class="coco-info">
-            <h3>Beneficios del coco</h3>
-            <p>Nuestro aceite de coco es extraído garantizando su pureza absoluta para mantener intactas todas sus propiedades y nutrientes esenciales.</p>
-            <ul class="lista-beneficios">
-                <li><strong>100% Puro y Natural:</strong> No contiene ningún tipo de aditivo químico, saborizantes, ni fragancias.</li>
-                <li><strong>Nutrición esencial:</strong> Conserva todas sus propiedades al ser procesado de manera natural.</li>
-                <li><strong>Versatilidad:</strong> Un espacio dedicado al coco y el plátano en todas sus formas.</li>
-            </ul>
-        </div>
+      </div>
+      
+      <svg class="connecting-lines" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path class="line-path corazon" d="M500 500 L 900 500" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path digestion" d="M500 500 L 823 735" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path dental" d="M500 500 L 623 880" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path apetito" d="M500 500 L 376 880" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path inmune" d="M500 500 L 176 735" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path pelo" d="M500 500 L 100 500" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path cerebral" d="M500 500 L 176 264" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path microbiana" d="M500 500 L 376 119" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path peso" d="M500 500 L 623 119" stroke-width="2" stroke="currentColor" fill="none"></path>
+        <path class="line-path azucar" d="M500 500 L 823 264" stroke-width="2" stroke="currentColor" fill="none"></path>
+      </svg>
     </div>
+  </div>
 </section>
 
 <section class="beneficios-modernos fade-in" style="padding-top: 0;">
@@ -120,7 +174,7 @@
         <h2 class="seccion-titulo">Por qué elegirnos</h2>
     </div>
     <div class="beneficios-grid">
-        <div class="beneficio-item">
+        <div class="beneficio-item-normal">
             <div class="icono-beneficio">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
@@ -130,7 +184,7 @@
             <p>Nuestros aceites no contienen aditivos, saborizantes ni fragancias. Extraemos la esencia real garantizando su pureza y manteniendo todos sus nutrientes.</p>
         </div>
 
-        <div class="beneficio-item">
+        <div class="beneficio-item-normal">
             <div class="icono-beneficio">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -143,7 +197,7 @@
             <p>Detrás de cada fruto hay personas y comunidades. Apoyamos directamente a mujeres cabeza de hogar, creando un ecosistema de crecimiento mutuo.</p>
         </div>
 
-        <div class="beneficio-item">
+        <div class="beneficio-item-normal">
             <div class="icono-beneficio">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
@@ -275,7 +329,7 @@
     </div>
 </section>
 
-<a href="[https://wa.me/573045749676](https://wa.me/573045749676)" class="whatsapp-float" target="_blank" aria-label="Chat de WhatsApp">
+<a href="https://wa.me/573045749676" class="whatsapp-float" target="_blank" aria-label="Chat de WhatsApp">
     <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.125-.327-.149-.976-.36-1.855-1.154-.728-.659-1.218-1.473-1.361-1.716-.144-.244-.015-.376.106-.497.109-.109.24-.28.361-.421.12-.141.16-.242.24-.403.08-.162.04-.305-.02-.426-.06-.121-.54-1.305-.74-1.787-.193-.467-.389-.404-.536-.412-.137-.008-.293-.008-.452-.008-.158 0-.415.06-.632.296-.217.236-.826.808-.826 1.97s.847 2.284.965 2.441c.119.158 1.666 2.544 4.037 3.518.566.232 1.006.37 1.349.474.568.181 1.085.155 1.494.094.461-.069 1.416-.578 1.615-1.139.199-.56.199-1.04.14-1.14-.059-.098-.217-.157-.455-.276z"/>
     </svg>
@@ -286,7 +340,7 @@
         <div>
             <a href="index.html" class="logo">Conservas de la región</a>
             <p style="margin-top: 1.5rem; margin-bottom: 0.5rem;"><strong>Ubicación:</strong> San Juan de Urabá, Antioquia</p>
-            <p><strong>Teléfono:</strong> <a href="[https://wa.me/573045749676](https://wa.me/573045749676)" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">+57 304 5749676</a></p>
+            <p><strong>Teléfono:</strong> <a href="https://wa.me/573045749676" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">+57 304 5749676</a></p>
         </div>
         <div>
             <h4>Enlaces</h4>
@@ -299,8 +353,8 @@
         <div>
             <h4>Síguenos</h4>
             <ul>
-                <li><a href="[https://www.instagram.com/conservasdelaregion](https://www.instagram.com/conservasdelaregion)">Instagram</a></li>
-                <li><a href="[https://wa.me/573045749676](https://wa.me/573045749676)">WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/conservasdelaregion">Instagram</a></li>
+                <li><a href="https://wa.me/573045749676">WhatsApp</a></li>
             </ul>
         </div>
     </div>

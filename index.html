@@ -58,43 +58,64 @@
             <a href="nosotros.html" class="btn-link" style="display: inline-block; margin-top: 1rem;">Conoce nuestra historia →</a>
         </div>
         <div class="filosofia-img" id="about-carousel">
-            <img src="src/img/paisaje.jpg" alt="Sobre nosotros" class="about-slide active">
-            <img src="src/img/plat-2.jpeg" alt="Sobre nosotros" class="about-slide">
-            <img src="src/img/plat-3.jpeg" alt="Sobre nosotros" class="about-slide">
-            <img src="src/img/plat-4.jpeg" alt="Sobre nosotros" class="about-slide">
-            <img src="src/img/plat-5.jpeg" alt="Sobre nosotros" class="about-slide">
             <img src="src/img/plat-6.png" alt="Sobre nosotros" class="about-slide">
         </div>
     </div>
 </section>
 
-<section class="historia-tradicion fade-in">
+<section class="beneficios-modernos fade-in" style="padding-top: 0;">
     <div class="cabecera-beneficios">
-        <h2 class="seccion-titulo">Historia y Tradición</h2>
-        <p style="color:var(--texto-claro); font-size:1.1rem;">Un legado agrícola que se transmite de generación en generación, cultivando las tierras más prósperas de nuestra región.</p>
+        <h2 class="seccion-titulo">Por qué elegirnos</h2>
     </div>
-    <div class="carousel-wrapper">
-        <div class="carousel-track-container">
-            <ul class="carousel-track" id="historia-track">
-                <li class="carousel-slide current-slide"><img src="src/img/1.jpg" alt="Historia y tradición 1"></li>
-                <li class="carousel-slide"><img src="src/img/2.jpg" alt="Historia y tradición 2"></li>
-                <li class="carousel-slide"><img src="src/img/3.jpg" alt="Historia y tradición 3"></li>
-                <li class="carousel-slide"><img src="src/img/4.jpg" alt="Historia y tradición 4"></li>
-                <li class="carousel-slide"><img src="src/img/5.jpg" alt="Historia y tradición 5"></li>
-            </ul>
+    <div class="beneficios-grid">
+        <div class="beneficio-item-normal">
+            <div class="icono-beneficio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+            </div>
+            <h3>Pureza Intacta</h3>
+            <p>Nuestros aceites no contienen aditivos, saborizantes ni fragancias. Extraemos la esencia real garantizando su pureza y manteniendo todos sus nutrientes.</p>
         </div>
-        <button class="carousel-btn btn-izq" id="historia-prev">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </button>
-        <button class="carousel-btn btn-der" id="historia-next">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </button>
-        <div class="carousel-nav" id="historia-nav">
-            <button class="carousel-dot current-dot" data-index="0"></button>
-            <button class="carousel-dot" data-index="1"></button>
-            <button class="carousel-dot" data-index="2"></button>
-            <button class="carousel-dot" data-index="3"></button>
-            <button class="carousel-dot" data-index="4"></button>
+
+        <div class="beneficio-item-normal">
+            <div class="icono-beneficio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+            </div>
+            <h3>Impacto Social</h3>
+            <p>Detrás de cada fruto hay personas y comunidades. Apoyamos directamente a mujeres cabeza de hogar, creando un ecosistema de crecimiento mutuo.</p>
+        </div>
+
+        <div class="beneficio-item-normal">
+            <div class="icono-beneficio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+            </div>
+            <h3>Sostenibilidad Total</h3>
+            <p>Un espacio dedicado al coco y el plátano que respeta el medio ambiente, utilizando prácticas ecológicas y empaques biodegradables y reciclables.</p>
+        </div>
+    </div>
+</section>
+
+<section class="video-demostracion fade-in">
+    <div class="demo-grid">
+        <div class="demo-texto">
+            <h2 class="seccion-titulo">Pureza en cada gota</h2>
+            <p>Un proceso delicado y artesanal. Descubre la textura, el aroma y la verdadera esencia de la naturaleza en nuestro Aceite de Coco Virgen. Mantenemos el respeto por nuestra tierra en cada frasco.</p>
+            <ul class="lista-beneficios" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                <li>Prensado en frío natural</li>
+                <li>Ideal para gastronomía y botánica</li>
+            </ul>
+            <a href="#productos-index" class="btn btn-primario">Ver Colección</a>
+        </div>
+        <div class="demo-video-wrapper">
+            <video autoplay muted loop playsinline src="src/video/video-desmotrar.mp4"></video>
         </div>
     </div>
 </section>
@@ -168,63 +189,6 @@
       </svg>
     </div>
   </div>
-</section>
-
-<section class="beneficios-modernos fade-in" style="padding-top: 0;">
-    <div class="cabecera-beneficios">
-        <h2 class="seccion-titulo">Por qué elegirnos</h2>
-    </div>
-    <div class="beneficios-grid">
-        <div class="beneficio-item-normal">
-            <div class="icono-beneficio">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
-                </svg>
-            </div>
-            <h3>Pureza Intacta</h3>
-            <p>Nuestros aceites no contienen aditivos, saborizantes ni fragancias. Extraemos la esencia real garantizando su pureza y manteniendo todos sus nutrientes.</p>
-        </div>
-
-        <div class="beneficio-item-normal">
-            <div class="icono-beneficio">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-            </div>
-            <h3>Impacto Social</h3>
-            <p>Detrás de cada fruto hay personas y comunidades. Apoyamos directamente a mujeres cabeza de hogar, creando un ecosistema de crecimiento mutuo.</p>
-        </div>
-
-        <div class="beneficio-item-normal">
-            <div class="icono-beneficio">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                </svg>
-            </div>
-            <h3>Sostenibilidad Total</h3>
-            <p>Un espacio dedicado al coco y el plátano que respeta el medio ambiente, utilizando prácticas ecológicas y empaques biodegradables y reciclables.</p>
-        </div>
-    </div>
-</section>
-
-<section class="video-demostracion fade-in">
-    <div class="demo-grid">
-        <div class="demo-texto">
-            <h2 class="seccion-titulo">Pureza en cada gota</h2>
-            <p>Un proceso delicado y artesanal. Descubre la textura, el aroma y la verdadera esencia de la naturaleza en nuestro Aceite de Coco Virgen. Mantenemos el respeto por nuestra tierra en cada frasco.</p>
-            <ul class="lista-beneficios" style="margin-top: 1.5rem; margin-bottom: 2rem;">
-                <li>Prensado en frío natural</li>
-                <li>Ideal para gastronomía y botánica</li>
-            </ul>
-            <a href="#productos-index" class="btn btn-primario">Ver Colección</a>
-        </div>
-        <div class="demo-video-wrapper">
-            <video autoplay muted loop playsinline src="src/video/video-desmotrar.mp4"></video>
-        </div>
-    </div>
 </section>
 
 <section id="productos-index" class="destacados fade-in">

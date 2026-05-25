@@ -44,8 +44,8 @@ nav a:hover, nav a.activo { color: var(--terracota); }
 .beneficio-card h3 { margin-bottom: 1rem; font-size: 1.3rem; }
 .beneficio-card p { color: var(--texto-claro); font-size: 0.95rem; }
 .filosofia { padding: 8rem 5%; }
-.filosofia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; max-width: 1200px; margin: 0 auto; }
-.filosofia-img { position: relative; width: 100%; aspect-ratio: 4/5; border-radius: 8px; overflow: hidden; }
+.filosofia-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 6rem; align-items: center; max-width: 1200px; margin: 0 auto; }
+.filosofia-img { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; }
 .filosofia-img .about-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease-in-out; }
 .filosofia-img .about-slide.active { opacity: 1; z-index: 1; }
 .filosofia-texto p { color: var(--texto-claro); margin-bottom: 2rem; font-size: 1.05rem; }
@@ -170,56 +170,3 @@ footer { background-color: var(--verde-botanico); color: var(--blanco); padding:
 .historia-card h3 { font-size: 1.8rem; color: var(--verde-botanico); margin-bottom: 1rem; transform: translateZ(30px); }
 .historia-card p { color: var(--texto-claro); font-size: 1rem; transform: translateZ(15px); }
 @media screen and (max-width: 768px) { .timeline::before { left: 20px; } .timeline-item { width: 100%; padding-left: 60px; padding-right: 0; left: 0!important; } .timeline-item:nth-child(even), .timeline-item:nth-child(odd) { text-align: left; } .timeline-dot, .timeline-item:nth-child(odd) .timeline-dot, .timeline-item:nth-child(even) .timeline-dot { left: 10px; right: auto; } }
-
-#coco-benefits-interactive { padding: 6rem 5%; background-color: var(--blanco); overflow: hidden; position: relative; }
-.coconut-benefits-container { max-width: 1200px; margin: 0 auto; position: relative; }
-.text-center { text-align: center; }
-.interactive-layout { position: relative; width: 100%; min-height: 800px; max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
-.central-display { position: relative; width: 260px; height: 260px; background: var(--bg-principal); border-radius: 50%; box-shadow: 0 20px 50px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.5s ease; overflow: hidden; }
-.central-coconut { width: 100%; height: auto; object-fit: contain; padding: 20px; transition: opacity 0.5s ease; }
-.central-panel { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--verde-botanico); color: var(--blanco); text-align: center; transition: opacity 0.5s ease; opacity: 1; z-index: 2; }
-.central-panel.hidden { opacity: 0; z-index: 1; pointer-events: none; }
-.central-panel h3 { font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--terracota); line-height: 1.2; }
-.central-panel p { font-size: 0.95rem; line-height: 1.5; color: var(--blanco); opacity: 0.9; }
-
-.benefit-item { position: absolute; background: var(--blanco); padding: 10px; border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; cursor: pointer; transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; border: 2px solid transparent; width: 140px; height: 140px; z-index: 15; transform: translate(-50%, -50%); }
-.benefit-item:hover { transform: translate(-50%, -50%) scale(1.1) !important; box-shadow: 0 15px 35px rgba(184,87,51,0.1); border-color: rgba(184,87,51,0.2); }
-.benefit-item.active { border-color: var(--terracota); background: var(--bg-principal); }
-
-.benefit-icon { width: 45px; height: 45px; margin-bottom: 5px; color: var(--verde-botanico); transition: color 0.4s ease; flex-shrink: 0; }
-.benefit-icon svg { width: 100%; height: 100%; }
-.benefit-item:hover .benefit-icon { color: var(--terracota); }
-
-.benefit-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; line-height: 1.3; color: var(--texto-oscuro); transition: color 0.4s ease; word-wrap: break-word; hyphens: auto; width: 100%; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; padding: 0 5px; }
-.benefit-item:hover .benefit-title { color: var(--terracota); }
-
-/* Posicionamiento en círculo para 10 elementos */
-.bubble-corazon { left: 90%; top: 50%; }
-.bubble-digestion { left: 82.3%; top: 73.5%; }
-.bubble-dental { left: 62.3%; top: 88%; }
-.bubble-apetito { left: 37.6%; top: 88%; }
-.bubble-inmune { left: 17.6%; top: 73.5%; }
-.bubble-pelo { left: 10%; top: 50%; }
-.bubble-cerebral { left: 17.6%; top: 26.4%; }
-.bubble-microbiana { left: 37.6%; top: 11.9%; }
-.bubble-peso { left: 62.3%; top: 11.9%; }
-.bubble-azucar { left: 82.3%; top: 26.4%; }
-
-.connecting-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; pointer-events: none; }
-.line-path { stroke: rgba(184,87,51,0.1); transition: stroke 0.4s ease, stroke-width 0.4s ease; }
-.line-path.active { stroke: var(--terracota); stroke-width: 3; stroke-dasharray: 5, 5; animation: dash 1s linear infinite; }
-@keyframes dash { to { stroke-dashoffset: -10; } }
-
-@media (max-width: 900px) { 
-    .interactive-layout { min-height: auto; flex-direction: column; gap: 2rem; max-width: 600px; padding: 2rem; } 
-    .central-display { width: 250px; height: 250px; order: 1; } 
-    .central-panel { padding: 30px; } 
-    .central-panel h3 { font-size: 1.5rem; } 
-    .central-panel p { font-size: 0.9rem; } 
-    .benefit-item { position: relative; top: auto; left: auto; right: auto; bottom: auto; transform: none !important; width: 100%; max-width: 320px; height: auto; flex-direction: row; gap: 1rem; padding: 1.5rem; border-radius: 8px; border-color: var(--borde-suave); order: 2; text-align: left; align-items: center; justify-content: flex-start; } 
-    .benefit-item:hover { transform: translateY(-5px) !important; border-color: rgba(184,87,51,0.3); }
-    .benefit-icon { width: 40px; height: 40px; margin: 0; } 
-    .benefit-title { font-size: 1rem; letter-spacing: normal; -webkit-line-clamp: 3; padding: 0; } 
-    .connecting-lines { display: none; } 
-    .benefit-item.active { border-color: var(--terracota); } 
-}
